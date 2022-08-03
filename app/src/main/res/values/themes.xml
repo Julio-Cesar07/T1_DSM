@@ -15,6 +15,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
         <!-- Customize your theme here. -->
+        <!-- SNACKBAR Custom -->
+        <item name="snackbarStyle">@style/MySnackBarStyle</item>
+        <item name="snackbarButtonStyle">@style/MySnackbarTextButtonStyle</item>
+        <item name="snackbarTextViewStyle">@style/MySnackbarTextViewStyle</item>
     </style>
 
     <style name="Theme.T1_DSM.NoActionBar">
@@ -36,4 +40,17 @@
 
     <style name="Theme.T1_DSM.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--SNACKBAR Custons -->
+    <style name="MySnackBarStyle" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="animationMode">slide</item>
+    </style>
+    <style name="MySnackbarTextButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/back_dark_purple</item>
+    </style>
+    <style name="MySnackbarTextViewStyle" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>
