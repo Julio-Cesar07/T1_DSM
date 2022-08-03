@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">T1_DSM</string>
+
+    <string name="nav_edit_profile">Editar Perfil</string>
+    <string name="nav_my_post">Minhas postagens</string>
+    <string name="nav_config">Configurações</string>
+    <string name="nav_notifications">Notificações</string>
+    <string name="nav_exit">Deslogar</string>
+    <string name="nav_mode_light">Modo Claro</string>
+    <string name="nav_description_image">Imagem do Usuário</string>
+
+    <string name="btn_accept">Entrar</string>
+
+    <!-- Login Screen Strings -->
+    <string name="email">Digite seu Email</string>
+    <string name="password">Digite sua Senha</string>
+    <string name="login">Entrar</string>
+    <string name="remember_pass">Esqueceu sua senha?</string>
+    <string name="text_signup">Não possui uma conta?</string>
+    <string name="link_signup">Se registre agora!</string>
+    <!--- Messages -->
+    <string name="error_invalid_email_pass">Email/Senha Inválidos</string>
+
+    <!-- Register Screen Strings -->
+    <string name="name">Digite seu nome</string>
+    <string name="signup">Confirmar e Registrar</string>
+    <!--- Messages -->
+    <string name="error_all_camps">Preencha Todos os Campos</string>
+    <string name="error_weak_password">Senha Deve Conter no Mínimo 6 Caracteres</string>
+    <string name="error_invalid_email">Email Inválido</string>
+    <string name="error_duplicate_email">Email já Registrado</string>
+    <string name="error_unknown">Erro Desconhecido - Contatar o Suporte</string>
+    <string name="success_signup">Cadastro Realizado com Sucesso!</string>
+
+    <!-- Remember Pass Screen Strings -->
+    <string name="email_confirmation">Confirme seu Email</string>
+    <string name="remember_confirmation">Redefinir Senha</string>
+
+</resources>

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.example.t1_dsm.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -26,6 +27,7 @@ import java.util.Map;
 public class FormSignup extends AppCompatActivity {
 
     private EditText edit_name, edit_email, edit_pass;
+    private ImageView img_back;
     private Button btn_signup;
 
     @Override
@@ -49,6 +51,10 @@ public class FormSignup extends AppCompatActivity {
             } else {
                 SignupUser(view);
             }
+        });
+
+        img_back.setOnClickListener(view -> {
+            finish();
         });
     }
 
@@ -107,6 +113,7 @@ public class FormSignup extends AppCompatActivity {
     }
 
     private void StartComponents(){
+        img_back = findViewById(R.id.back_arrow);
         edit_name = findViewById(R.id.textName);
         edit_email = findViewById(R.id.textEmail);
         edit_pass = findViewById(R.id.textPassword);
