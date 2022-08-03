@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#010112</color>
+    <color name="colorPrimary">#FFFFFF</color><!--Background color for AppBar-->
+    <color name="textColorPrimary">#000000</color>
+    <color name="navViewColor">#010116</color>
+    <color name="navButtonImage">#952FD3</color>
+    <color name="navButtonColor">#C0BFBD</color>
 </resources>
