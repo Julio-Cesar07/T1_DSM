@@ -14,8 +14,20 @@
         android:theme="@style/Theme.T1_DSM.NoActionBar"
         tools:targetApi="31">
 
-        <activity
-            android:name=".HomeActivity"
+            <activity
+              android:name=".HomeActivity"
+              android:exported="false" />
+            <activity
+              android:name=".FormRememberPass"
+              android:exported="false" />
+            <activity
+              android:name=".FormSignup"
+              android:exported="false" />
+            <activity
+              android:name=".MainActivity"
+              android:exported="false" />
+            <activity
+            android:name=".FormLogin"
             android:exported="true"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.T1_DSM.NoActionBar.NoActionBar">
