@@ -11,27 +11,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.T1_DSM"
+        android:theme="@style/Theme.T1_DSM.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".FormRememberPass"
-            android:exported="false" />
-        <activity
-            android:name=".FormSignup"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
+
+            <activity
+              android:name=".HomeActivity"
+              android:exported="false" />
+            <activity
+              android:name=".FormRememberPass"
+              android:exported="false" />
+            <activity
+              android:name=".FormSignup"
+              android:exported="false" />
+            <activity
+              android:name=".MainActivity"
+              android:exported="false" />
+            <activity
             android:name=".FormLogin"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.T1_DSM.NoActionBar">
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.T1_DSM.NoActionBar.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
