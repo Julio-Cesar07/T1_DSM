@@ -24,6 +24,15 @@
             app:constraint_referenced_tags="3.00"
             app:srcCompat="@drawable/ic_launcher_background" />
 
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PlaceHolder"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.t1_dsm.R;
+import com.example.t1_dsm.ui.home.HomeActivity;
 import com.example.t1_dsm.ui.home.HomeViewModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -73,7 +74,7 @@ public class FormLogin extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            //HomeScreen();
+                            HomeScreen();
                         }
                     }, 1500);
                 } else {
@@ -91,7 +92,7 @@ public class FormLogin extends AppCompatActivity {
     }
 
     private void HomeScreen(){
-        Intent intent = new Intent(FormLogin.this, HomeViewModel.class);
+        Intent intent = new Intent(FormLogin.this, HomeActivity.class);
         startActivity(intent);
         finish();
     }
