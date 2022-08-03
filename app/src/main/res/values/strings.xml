@@ -9,4 +9,22 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Login Screen Strings -->
+    <string name="email">Digite seu email</string>
+    <string name="password">Digite sua Senha</string>
+    <string name="login">Entrar</string>
+    <string name="remember_pass">Esqueceu sua senha?</string>
+    <string name="text_signup">Não possui uma conta?</string>
+    <string name="link_signup">Se registre agora!</string>
+
+    <!-- Register Screen Strings -->
+    <string name="name">Digite seu nome</string>
+    <string name="signup">Confirmar e Registrar</string>
+
+    <!-- Remember Pass Screen Strings -->
+    <string name="email_confirmation">Confirme seu email</string>
+    <string name="remember_confirmation">Redefinir senha</string>
+
+
 </resources>

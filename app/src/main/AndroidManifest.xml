@@ -14,7 +14,16 @@
         android:theme="@style/Theme.T1_DSM"
         tools:targetApi="31">
         <activity
+            android:name=".FormRememberPass"
+            android:exported="false" />
+        <activity
+            android:name=".FormSignup"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormLogin"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.T1_DSM.NoActionBar">
