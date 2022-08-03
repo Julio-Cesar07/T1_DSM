@@ -1,4 +1,4 @@
-package com.example.t1_dsm.ui;
+package com.example.t1_dsm.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

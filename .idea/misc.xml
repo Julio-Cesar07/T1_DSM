@@ -11,6 +11,8 @@
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/drawable/ic_nav_image_background.xml" value="0.1945" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/drawable/ic_vector__1_.xml" value="0.1945" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/drawable/nav_button_image.xml" value="0.1945" />
+        <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/layout/activity_form_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/layout/activity_form_signup.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/layout/activity_main2.xml" value="0.17074275362318841" />
@@ -38,16 +40,6 @@
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1945" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1945" />
         <entry key="..\:/Users/julio/AndroidStudioProjects/T1_DSM/app/src/main/res/mipmap-anydpi-v26/ic_nav_image.xml" value="0.1945" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/background.xml" value="0.1945" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/button.xml" value="0.215" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/container_components.xml" value="0.23" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/edit_text.xml" value="0.231" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_email.xml" value="0.231" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_eye.xml" value="0.231" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_name.xml" value="0.231" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_login.xml" value="0.2" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_remember_pass.xml" value="0.2015625" />
-        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_signup.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
