@@ -37,4 +37,11 @@
     <string name="email_confirmation">Confirme seu Email</string>
     <string name="remember_confirmation">Redefinir Senha</string>
 
+    <!-- Perfil Screen Strings -->
+    <string name="profile">Perfil</string>
+    <string name="logout">Deslogar-se</string>
+    <string name="logout_confirmation">Deseja realmente DESLOGAR?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
 </resources>
