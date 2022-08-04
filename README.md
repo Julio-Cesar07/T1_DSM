@@ -1,5 +1,5 @@
 # T1-DSM
-### Trabalho desenvolvido para a disciplina de Desenvolvimento de Software Mobile 2022/01 utilizando Java e Firebase 30.3.1, desenvolvido integralmente no Android Studio 2021.2.1
+### Trabalho desenvolvido para a disciplina de Desenvolvimento de Software Mobile 2022/01 utilizando Java e Firebase 30.3.1, desenvolvido integralmente no Android Studio 2021.2.1 pelos alunos: *Julio Cesar dos Santos Oliveira Filho - RA: 779800* e *Vanderlei de Brito Junior - RA: 636932*.
 ***
 ## Descrição do Projeto
 <p>O projeto, chamado até o momento de Gamers Moments, tem como intuito conectar jogadores que desejam jogar juntos! Para isso, você, como um usuário, cria uma publicação com qual jogo deseja jogar, a quantidade de vagas em seu time e o nível de habilidade mínima que deseja, assim, outros jogadores verão sua publicação e irão pedir permissão para entrar no seu grupo.</p>
