@@ -25,6 +25,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Locale;
@@ -136,6 +137,8 @@ public class FormLogin extends AppCompatActivity {
                 } else {
                     try {
                         throw task.getException();
+                    } catch (FirebaseAuthInvalidUserException e) {
+                        Snackbar.make(view, R.string.error_invalid_user, Snackbar.LENGTH_LONG).show();
                     } catch (FirebaseAuthInvalidCredentialsException e) {
                         Snackbar.make(view, R.string.error_invalid_email_pass, Snackbar.LENGTH_LONG).show();
                     } catch (Exception e) {

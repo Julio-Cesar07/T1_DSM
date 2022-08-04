@@ -34,6 +34,7 @@
     <string name="link_signup">Register now!</string>
     <!--- Messages -->
     <string name="error_invalid_email_pass">Invalid Email/Password</string>
+    <string name="error_invalid_user">User not Registred</string>
 
     <!-- Register Screen Strings -->
     <string name="name">Type your Name</string>
@@ -65,5 +66,13 @@
     <string name="logout_confirmation">Do you really want to LOGOUT?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="change_name">Change Name</string>
+    <string name="change_name_confirmation">Do you really want to CHANGE your NAME?</string>
+    <string name="pass">Change Password</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Passwold</string>
+    <string name="confirm">Confirm</string>
+    <string name="sucess_change_pass">Password Changed!</string>
+    <string name="failed_change_pass">Password failed to change!</string>
 
 </resources>

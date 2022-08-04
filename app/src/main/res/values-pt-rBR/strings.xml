@@ -29,6 +29,7 @@
     <string name="link_signup">Se registre agora!</string>
     <!--- Messages -->
     <string name="error_invalid_email_pass">Email/Senha Inválidos</string>
+    <string name="error_invalid_user">Usuário não Registrado</string>
 
     <!-- Register Screen Strings -->
     <string name="name">Digite seu nome</string>
@@ -51,5 +52,12 @@
     <string name="logout_confirmation">Deseja realmente DESLOGAR?</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
-
+    <string name="change_name">Trocar Nome</string>
+    <string name="change_name_confirmation">Deseja realmente TROCAR seu NOME?</string>
+    <string name="pass">Trocar Senha</string>
+    <string name="old_pass">Senha Antiga</string>
+    <string name="new_pass">Senha Nova</string>
+    <string name="confirm">Confirmar</string>
+    <string name="sucess_change_pass">Senha Trocada!</string>
+    <string name="failed_change_pass">Falha na troca de Senha</string>
 </resources>
