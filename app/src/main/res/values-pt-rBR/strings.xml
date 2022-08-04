@@ -6,9 +6,17 @@
     <string name="nav_my_post">Minhas postagens</string>
     <string name="nav_config">Configurações</string>
     <string name="nav_notifications">Notificações</string>
-    <string name="nav_exit">Deslogar</string>
+    <string name="nav_exit">Sair</string>
     <string name="nav_mode_light">Modo Claro</string>
-    <string name="nav_description_image">Imagem do Usuário</string>
+    <string name="nav_description_image">Imagem do usuário</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="btn_create_post">Escrever post</string>
 
     <string name="btn_accept">Entrar</string>
 
@@ -21,6 +29,7 @@
     <string name="link_signup">Se registre agora!</string>
     <!--- Messages -->
     <string name="error_invalid_email_pass">Email/Senha Inválidos</string>
+    <string name="error_invalid_user">Usuário não Registrado</string>
 
     <!-- Register Screen Strings -->
     <string name="name">Digite seu nome</string>
@@ -43,5 +52,12 @@
     <string name="logout_confirmation">Deseja realmente DESLOGAR?</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
-
+    <string name="change_name">Trocar Nome</string>
+    <string name="change_name_confirmation">Deseja realmente TROCAR seu NOME?</string>
+    <string name="pass">Trocar Senha</string>
+    <string name="old_pass">Senha Antiga</string>
+    <string name="new_pass">Senha Nova</string>
+    <string name="confirm">Confirmar</string>
+    <string name="sucess_change_pass">Senha Trocada!</string>
+    <string name="failed_change_pass">Falha na troca de Senha</string>
 </resources>
