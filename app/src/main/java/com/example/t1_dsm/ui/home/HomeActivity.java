@@ -1,11 +1,15 @@
 package com.example.t1_dsm.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
 
 import com.example.t1_dsm.R;
+import com.example.t1_dsm.ui.login.FormLogin;
+import com.example.t1_dsm.ui.login.FormProfile;
+import com.example.t1_dsm.ui.login.FormSignup;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -41,8 +45,11 @@ public class HomeActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        Intent intent = new Intent(HomeActivity.this, FormProfile.class);
+
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_post)
+                R.id.nav_home, R.id.nav_form_profile, R.id.nav_exit)
                 .setOpenableLayout(drawer)
                 .build(); //navigations
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);

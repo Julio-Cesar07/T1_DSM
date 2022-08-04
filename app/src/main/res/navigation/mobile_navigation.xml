@@ -15,5 +15,15 @@
         android:name="com.example.t1_dsm.ui.post.PostFragment"
         android:label="@string/btn_create_post"
         tools:layout="@layout/fragment_post" />
+    <activity
+        android:id="@+id/nav_form_profile"
+        android:name="com.example.t1_dsm.ui.login.FormProfile"
+        android:label="activity_form_profile"
+        tools:layout="@layout/activity_form_profile" />
+    <activity
+        android:id="@+id/nav_exit"
+        android:name="com.example.t1_dsm.ui.exit.exitActivity"
+        android:label="activity_exit"
+        tools:layout="@layout/activity_exit" />
 
 </navigation>

@@ -4,7 +4,7 @@
 
     <group>
         <item
-            android:id="@+id/nav_edit_profile"
+            android:id="@+id/nav_form_profile"
             android:icon="@drawable/ic_nav_edit_profile"
             android:title="@string/nav_edit_profile" />
         <item
@@ -16,18 +16,8 @@
             android:icon="@drawable/ic_nav_notifications"
             android:title="@string/nav_notifications" />
         <item
-            android:id="@+id/nav_config"
-            android:icon="@drawable/ic_nav_config"
-            android:title="@string/nav_config" />
-    </group>
-    <group android:checkableBehavior="single">
-        <item
             android:id="@+id/nav_exit"
             android:icon="@drawable/ic_nav_exit"
             android:title="@string/nav_exit" />
-        <item
-            android:id="@+id/nav_mode_light"
-            android:icon="@drawable/ic_nav_mode_light"
-            android:title="@string/nav_mode_light" />
     </group>
 </menu>
