@@ -1,10 +1,9 @@
 package com.example.t1_dsm.model;
 
 public class Post {
-    Integer idProp, vacancies;
-    String text, game, rank;
+    String text, game, rank, idProp, vacancies;
 
-    public Post(String text, String game, String rank, Integer idProp, Integer vacancies){
+    public Post(String text, String game, String rank, String idProp, String vacancies){
         this.text = text;
         this.game = game;
         this.rank = rank;
@@ -36,15 +35,15 @@ public class Post {
         this.rank = rank;
     }
 
-    public Integer getIdProp(){
+    public String getIdProp(){
         return idProp;
     }
 
-    public Integer getVacancies(){
+    public String getVacancies(){
         return vacancies;
     }
 
-    public void setVacancies(Integer vacancies){
+    public void setVacancies(String vacancies){
         this.vacancies = vacancies;
     }
 }

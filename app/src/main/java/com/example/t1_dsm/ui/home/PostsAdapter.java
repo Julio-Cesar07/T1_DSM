@@ -1,5 +1,6 @@
 package com.example.t1_dsm.ui.home;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,15 +8,27 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.t1_dsm.R;
 import com.example.t1_dsm.model.Post;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 // ListAdapter is more convenient to handle a list of items that may change.
 // https://github.com/codepath/android_guides/wiki/Using-the-RecyclerView#using-with-listadapter
@@ -24,6 +37,7 @@ public class PostsAdapter extends ListAdapter<Post, PostsAdapter.ViewHolder> {
 
     private ItemClickListener mClickListener;
     private ItemLongClickListener mLongClickListener;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public PostsAdapter() {
         super(DIFF_CALLBACK);
@@ -41,16 +55,18 @@ public class PostsAdapter extends ListAdapter<Post, PostsAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         List<String> label = new ArrayList<>();
         //getItem(position).getText(); //aqui ele coloca as informações no fragment
-        label.add(Integer.toString(getItem(position).getIdProp()));
+        label.add(getItem(position).getIdProp());
         label.add(getItem(position).getText());
         label.add(getItem(position).getGame());
-        label.add(Integer.toString(getItem(position).getVacancies()));
+        label.add(getItem(position).getVacancies());
         label.add(getItem(position).getRank());
+
         holder.viewPostName.setText("@"+label.get(0));
         holder.viewPostDescription.setText(label.get(1));
         holder.viewPostGame.setText(label.get(2));
         holder.viewPostVagancies.setText("Vagas: "+label.get(3));
         holder.viewPostRank.setText("Rank: "+label.get(4));
+
 
     }
 
