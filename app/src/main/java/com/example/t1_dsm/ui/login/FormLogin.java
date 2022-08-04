@@ -43,7 +43,6 @@ public class FormLogin extends AppCompatActivity {
 
         // Carregar idioma salvo
         Locale currentLocale = LoadSharedPreferences();
-
         Locale.setDefault(currentLocale);
         Resources resources = this.getResources();
         Configuration configuration = resources.getConfiguration();
@@ -101,7 +100,7 @@ public class FormLogin extends AppCompatActivity {
             SharedPreferences.Editor editor = preferences.edit();
             editor.putString("localeLanguage", selectedLocale.getLanguage());
             editor.putString("localeCountry", selectedLocale.getCountry());
-            editor.commit();
+            editor.apply();
 
             // Aplicar as Configs
             recreate();

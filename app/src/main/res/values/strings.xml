@@ -55,11 +55,19 @@
     <string name="email_confirmation">Confirm your Email</string>
     <string name="remember_confirmation">Redefine Password</string>
 
+
     <!--Create Post-->
     <string name="write_post">Escreva sua publicação</string>
     <string name="write_game">Escreva o jogo</string>
     <string name="write_rank">Escreva o rank</string>
     <string name="write_vagancies">Escreva o número de vagas</string>
     <string name="publish_post">Publicar</string>
+
+    <!-- Perfil Screen Strings -->
+    <string name="profile">Profile</string>
+    <string name="logout">LogOut</string>
+    <string name="logout_confirmation">Do you really want to LOGOUT?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 </resources>
