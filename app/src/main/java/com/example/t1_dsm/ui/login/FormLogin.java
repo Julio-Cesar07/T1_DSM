@@ -15,13 +15,11 @@ import android.widget.TextView;
 
 import com.example.t1_dsm.R;
 import com.example.t1_dsm.ui.home.HomeActivity;
-import com.example.t1_dsm.ui.home.HomeViewModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 
 public class FormLogin extends AppCompatActivity {
@@ -30,6 +28,7 @@ public class FormLogin extends AppCompatActivity {
     private EditText edit_email, edit_pass;
     private Button btn_login;
     private ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
