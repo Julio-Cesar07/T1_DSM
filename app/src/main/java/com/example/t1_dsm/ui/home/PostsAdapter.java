@@ -61,7 +61,7 @@ public class PostsAdapter extends ListAdapter<Post, PostsAdapter.ViewHolder> {
         label.add(getItem(position).getVacancies());
         label.add(getItem(position).getRank());
 
-        holder.viewPostName.setText("@"+label.get(0));
+        holder.viewPostName.setText(label.get(0));
         holder.viewPostDescription.setText(label.get(1));
         holder.viewPostGame.setText(label.get(2));
         holder.viewPostVagancies.setText("Vagas: "+label.get(3));
