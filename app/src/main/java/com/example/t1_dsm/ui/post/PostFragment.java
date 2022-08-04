@@ -36,10 +36,10 @@ public class PostFragment extends Fragment {
     private EditText edit_rank;
     private EditText edit_vagancies;
     private Button btn_publish;
-    String userName;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String userId;
+    String userEmail;
 
 
     @Override
@@ -53,7 +53,6 @@ public class PostFragment extends Fragment {
         HomeViewModel homeViewModel =
                 new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
 
-        Log.d("socorro", "me ajuda " + homeViewModel.getPost(0));
 
         btn_publish.setOnClickListener(view -> {
             Map<String, Object> post = new HashMap<>();
@@ -64,18 +63,10 @@ public class PostFragment extends Fragment {
 
 
             userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            userEmail = FirebaseAuth.getInstance().getCurrentUser().getEmail();
 
             post.put("id", userId);
-            DocumentReference documentReferenceUser = db.collection("Usuarios").document(userId);
-            documentReferenceUser.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-                @Override
-                public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                    if(value != null){
-                        userName = value.getString("name");
-                    }
-                }
-            });
-            post.put("name", userName);
+            post.put("email", userEmail);
             post.put("text", textPost);
             post.put("game", textGame);
             post.put("rank", textRank);
@@ -86,7 +77,7 @@ public class PostFragment extends Fragment {
                 @Override
                 public void onSuccess(Void unused) {
                     Log.d("signup_db", "Post " + homeViewModel.getPost(0) + " cadastrado no Banco de Dados");
-                    homeViewModel.createPost(textPost, textGame, textRank, userName, textVacancies);
+                    homeViewModel.createPost(textPost, textGame, textRank, userEmail, textVacancies);
                     getActivity().onBackPressed();
                 }
             }).addOnFailureListener(new OnFailureListener() {

@@ -50,7 +50,7 @@ public class HomeViewModel extends ViewModel {
 
                         createPost(document.getString("text"),
                                 document.getString("game"), document.getString("rank"),
-                                document.getString("name"), document.getString("vacancies"));
+                                document.getString("email"), document.getString("vacancies"));
                     }
                 } else {
                     Log.d("ve isso", "Error getting documents: ", task.getException());
