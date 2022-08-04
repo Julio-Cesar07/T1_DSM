@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_arrow_back.xml" value="0.347" />
+        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_edit.xml" value="0.347" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_eye.xml" value="0.347" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_image_button.xml" value="0.347" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/drawable/ic_language.xml" value="0.347" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_login.xml" value="0.33" />
+        <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_profile.xml" value="0.3859375" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_remember_pass.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_form_signup.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/VJr/Documents/Projetos/Mobile/T1_DSM/app/src/main/res/layout/activity_home.xml" value="0.38697916666666665" />

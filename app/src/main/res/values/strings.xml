@@ -47,5 +47,12 @@
     <string name="email_confirmation">Confirm your Email</string>
     <string name="remember_confirmation">Redefine Password</string>
 
+    <!-- Perfil Screen Strings -->
+    <string name="profile">Profile</string>
+    <string name="logout">LogOut</string>
+    <string name="logout_confirmation">Do you really want to LOGOUT?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
 
 </resources>
