@@ -8,9 +8,9 @@
             android:icon="@drawable/ic_nav_edit_profile"
             android:title="@string/nav_edit_profile" />
         <item
-            android:id="@+id/nav_my_post"
+            android:id="@+id/nav_home"
             android:icon="@drawable/ic_nav_my_post"
-            android:title="@string/nav_my_post" />
+            android:title="@string/nav_post" />
         <item
             android:id="@+id/nav_notifications"
             android:icon="@drawable/ic_nav_notifications"

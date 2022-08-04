@@ -7,22 +7,32 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.t1_dsm.model.Notifications;
 import com.example.t1_dsm.model.Post;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
     private MutableLiveData<List<Post>> post;
+    private MutableLiveData<List<Notifications>> notification;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public HomeViewModel() {
@@ -57,13 +67,7 @@ public class HomeViewModel extends ViewModel {
                 }
             }
         });
-//        if(post == null){ //iniciar valores padrões
-//            ,
-//                    new Post("Oie, estou convidando alguém para jogar It takes two comigo.", "It takes two",
-//                            "Não tem", "0", "1"),
-//                    new Post("Oie, estou convidando alguém para jogar League of Legends.", "League of Legends",
-//                            "Qualquer", "0", "1")
-//            ));
+
         }
         return post;
     }
@@ -87,6 +91,62 @@ public class HomeViewModel extends ViewModel {
         List<Post> newListPost = new ArrayList<Post>(post.getValue());
         newListPost.remove(ind);
         post.setValue(newListPost);
+    }
+
+    public void createNotification(Post tPost){
+        Map<String, Object> notification = new HashMap<>();
+        String userEmail = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+
+        notification.put("proprietario", tPost.getIdProp());
+        notification.put("solicitante", userEmail);
+        notification.put("texto_post", tPost.getText());
+        notification.put("game", tPost.getGame());
+        DocumentReference documentReference = db.collection("notifications").document();
+
+        documentReference.set(notification).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d("signup_db_error", "Falha ao salvar os dados no Banco de Dados: " + e.toString());
+            }
+        });
+
+
+
+    }
+
+    public LiveData<List<Notifications>> getNotificationsByEmail(String email){
+        if(notification == null) {
+            notification = new MutableLiveData<List<Notifications>>();
+            notification.setValue(Arrays.asList(
+                    new Notifications("Teste", "Teste",
+                            "Teste", "Teste")));
+
+            CollectionReference notRef = db.collection("notifications");
+            Query query = notRef.whereEqualTo("proprietario", email);
+
+
+            query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    if (task.isSuccessful()) {
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            Log.d("not", document.getString("proprietario") + " => " + document.getString("solicitante"));
+                            addNotification(document.getString("texto_post"), document.getString("game"),
+                                    document.getString("proprietario"), document.getString("solicitante"));
+
+                        }
+                    }
+                }
+            });
+        }
+        Log.d("not", " " + notification);
+        return notification;
+    }
+
+    public void addNotification(String text, String game, String idProp, String solicitante){
+        List<Notifications> newListNotifications = new ArrayList<Notifications>(notification.getValue());
+        newListNotifications.add(new Notifications(text, game, idProp, solicitante));
+        notification.setValue(newListNotifications);
     }
 
 

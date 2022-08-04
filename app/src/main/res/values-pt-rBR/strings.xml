@@ -44,4 +44,7 @@
     <string name="yes">Sim</string>
     <string name="no">Não</string>
 
+    <string name="chat">Chat</string>
+    <string name="nav_post">Post</string>
+
 </resources>

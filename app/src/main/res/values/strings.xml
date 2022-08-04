@@ -70,4 +70,6 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
+    <string name="chat">Chat</string>
+    <string name="nav_post">Post</string>
 </resources>
