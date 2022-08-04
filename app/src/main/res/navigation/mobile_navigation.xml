@@ -25,5 +25,10 @@
         android:name="com.example.t1_dsm.ui.exit.exitActivity"
         android:label="activity_exit"
         tools:layout="@layout/activity_exit" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.t1_dsm.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
 
 </navigation>

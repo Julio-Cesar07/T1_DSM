@@ -52,6 +52,9 @@
     <string name="logout_confirmation">Deseja realmente DESLOGAR?</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
+
+    <string name="chat">Chat</string>
+    <string name="nav_post">Post</string>
     <string name="change_name">Trocar Nome</string>
     <string name="change_name_confirmation">Deseja realmente TROCAR seu NOME?</string>
     <string name="pass">Trocar Senha</string>

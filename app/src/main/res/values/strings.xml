@@ -75,4 +75,6 @@
     <string name="sucess_change_pass">Password Changed!</string>
     <string name="failed_change_pass">Password failed to change!</string>
 
+    <string name="chat">Chat</string>
+    <string name="nav_post">Post</string>
 </resources>
