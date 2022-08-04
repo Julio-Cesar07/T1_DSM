@@ -25,6 +25,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Locale;
 
@@ -106,6 +107,18 @@ public class FormLogin extends AppCompatActivity {
             recreate();
 
         });
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (currentUser != null) {
+            HomeScreen();
+        }
 
     }
 
