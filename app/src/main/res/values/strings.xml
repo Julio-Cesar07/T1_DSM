@@ -1,17 +1,6 @@
 <resources>
     <string name="app_name">T1_DSM</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="title_activity_main2">MainActivity2</string>
 
     <string name="nav_edit_profile">Editar Perfil</string>
     <string name="nav_my_post">Minhas postagens</string>
@@ -33,31 +22,54 @@
 
     <string name="btn_accept">Entrar</string>
 
+    <!-- Strings used for fragments for navigation -->
+
+
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+    <string name="title_activity_main2" translatable="false">MainActivity2</string>
+
+    <string name="nav_edit_profile">Edit Profile</string>
+    <string name="nav_my_post">My Posts</string>
+    <string name="nav_config">Configuration</string>
+    <string name="nav_notifications">Notification</string>
+    <string name="nav_exit">Logout</string>
+    <string name="nav_mode_light">Light Mode</string>
+    <string name="nav_description_image">Profile Picture</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="btn_accept">LogIn</string>
 
     <!-- Login Screen Strings -->
-    <string name="email">Digite seu email</string>
-    <string name="password">Digite sua Senha</string>
-    <string name="login">Entrar</string>
-    <string name="remember_pass">Esqueceu sua senha?</string>
-    <string name="text_signup">Não possui uma conta?</string>
-    <string name="link_signup">Se registre agora!</string>
+
+    <string name="email">Type your Email</string>
+    <string name="password">Type your Password</string>
+    <string name="login">LogIn</string>
+    <string name="remember_pass">Don\'t remember your pass?</string>
+    <string name="text_signup">Don\'t have an account?</string>
+    <string name="link_signup">Register now!</string>
     <!--- Messages -->
-    <string name="error_invalid_email_pass">Email/Senha Inválidos</string>
+    <string name="error_invalid_email_pass">Invalid Email/Password</string>
 
     <!-- Register Screen Strings -->
-    <string name="name">Digite seu nome</string>
-    <string name="signup">Confirmar e Registrar</string>
+    <string name="name">Type your Name</string>
+    <string name="signup">Accept and Register</string>
     <!--- Messages -->
-    <string name="error_all_camps">Preencha Todos os Campos</string>
-    <string name="error_weak_password">Senha Deve Conter no Mínimo 6 Caracteres</string>
-    <string name="error_invalid_email">Email Inválido</string>
-    <string name="error_duplicate_email">Email já Registrado</string>
-    <string name="error_unknown">Erro Desconhecido - Contatar o Suporte</string>
-    <string name="success_signup">Cadastro Realizado com Sucesso!</string>
+    <string name="error_all_camps">Fill in all Fields</string>
+    <string name="error_weak_password">Password Must Contain at Least 6 Characters</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="error_duplicate_email">Email Already Registered</string>
+    <string name="error_unknown">Unknown Error - Contact Support</string>
+    <string name="success_signup">Registration Successful!</string>
+
 
     <!-- Remember Pass Screen Strings -->
-    <string name="email_confirmation">Confirme seu email</string>
-    <string name="remember_confirmation">Redefinir senha</string>
+    <string name="email_confirmation">Confirm your Email</string>
+    <string name="remember_confirmation">Redefine Password</string>
 
     <!--Create Post-->
     <string name="write_post">Escreva sua publicação</string>
